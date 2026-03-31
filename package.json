@@ -1,0 +1,25 @@
+{
+  "name": "travel-planner",
+  "version": "1.0.0",
+  "description": "Travel Planner - Full Stack Application",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "cd Frontend && npm install && npm run build",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "dev:backend": "cd backend && npm start"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "travel",
+    "planner",
+    "booking",
+    "tourism"
+  ],
+  "license": "MIT"
+}
