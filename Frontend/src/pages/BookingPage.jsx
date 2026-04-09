@@ -12,7 +12,7 @@ export default function BookingPage() {
   const [bookingDates, setBookingDates] = useState(null);
   const [numNights, setNumNights] = useState(1);
   const [members, setMembers] = useState([{ name: "", age: "" }]);
-  const [selectedActivities, setSelectedActivities] = useState([]); // Add state for selected activities
+  const [selectedActivities, setSelectedActivities] = useState([]); // Add state for selected activity
 
   const handleMemberChange = (index, field, value) => {
     const updatedMembers = [...members];
